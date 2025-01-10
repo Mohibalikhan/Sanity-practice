@@ -72,14 +72,15 @@ const ProductsPage = () => {
   );
 };
 
-const styles = {
+// Explicitly typing `styles` with `React.CSSProperties`
+const styles: { [key: string]: React.CSSProperties } = {
   container: {
     padding: "20px",
     maxWidth: "1200px",
     margin: "0 auto",
   },
   title: {
-    textAlign: "center",
+    textAlign: "center", // No error now
     fontSize: "2rem",
     marginBottom: "20px",
   },
