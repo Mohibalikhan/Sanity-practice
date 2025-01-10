@@ -37,6 +37,7 @@ const ProductsPage = () => {
         const data = await client.fetch(query);
         setProducts(data);
       } catch (error) {
+        console.error("Error fetching products:", error);  // Log the error for debugging
         setError("Failed to fetch products");
       } finally {
         setLoading(false);
@@ -47,7 +48,7 @@ const ProductsPage = () => {
   }, []);
 
   if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (error) return <div>Error: {error}</div>;  // Render error message
 
   return (
     <div style={styles.container}>
