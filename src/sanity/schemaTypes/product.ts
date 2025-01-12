@@ -19,7 +19,7 @@ export default {
         title: 'Product Image',
         options: {
           hotspot: true // Enables cropping and focal point selection
-        }
+        },
       }
     ]
   };
