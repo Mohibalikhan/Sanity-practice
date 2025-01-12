@@ -10,10 +10,10 @@ const __dirname = path.dirname(__filename)
 dotenv.config({ path: path.resolve(__dirname, '../.env.local') })
 // Create Sanity client
 const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  projectId: "Ozomymay",
+  dataset: "production",
   useCdn: false,
-  token: process.env.SANITY_API_TOKEN,
+  token: "ktnXuQDGYmqrmYHIqDakd9H4YEuQZ4Ue9LerUbJYO9NlchDHzsDWeXlgM6vaKRkOEMR962Ml2FOBeHZitlRT4zE2QOvI3sMjwuhtv2OgF8rQCqGF27KEiys3BuCjYcR3fWgxTDIv11T1CVpTzw1l9rSVJYFQ0pLLxMeTcHUbUPA0mTYM8W8s",
   apiVersion: '2021-08-31'
 })
 async function uploadImageToSanity(imageUrl) {
